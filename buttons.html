@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/grid.css">
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<title>Project 1</title>
+</head>
+<body>
+	<div class="wrapper active">
+		<header  class="main-header">
+			<a href="#" class="logo">
+				<span>
+					Project Name
+				</span>
+			</a>
+			<nav class="nav-top">
+				<a href="#" class="sidebar-toggle" >
+					<i class="fa fa-list">
+						
+					</i>
+				</a>
+				<div class="nav-custom-menu">
+					<ul>
+						<li class="nav-dropdown">
+							<a href="#">
+								<i class="fa fa-cog"></i>
+							</a>
+							<ul  class="ul-dropdown">
+								<li>
+									<a href="">Settings</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-dropdown" style="position: relative;">
+							<a href="#">
+								<!-- <img src="http://joy-office-storage.helputalk.com/pc/avatar1.png" width="20px" style="border-radius: 50%;"> -->
+								<span>Benedict Bueno</span>
+							</a>
+							<ul class="ul-dropdown">
+								<li class="user-profile" style="">
+									<img src="http://joy-office-storage.helputalk.com/pc/avatar1.png" width="75px"><br>
+									<span>Benedict Bueno</span>
+								</li>
+								<li class="user-footer">
+									<a href="">Profile</a><a href="">Sign Out</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<aside class="main-sidebar">
+			<section>
+				<div class="user-profile">
+					<div class="user-img" style="">
+						<img src="http://joy-office-storage.helputalk.com/pc/avatar1.png" width="45px" style="border-radius: 50%;">
+					</div>
+					<div class="user-info">
+						<span>Benedict Bueno</span>
+					</div>
+				</div>
+				<ul>
+					<li class="side-drop active">
+						<a>
+						 	<i class="fa fa-laptop"></i>
+						 	<span>UI Elements</span>
+						 	<span>
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul style="list-style: none;padding: 0;margin: 0;padding-left: 25px;display: none;">
+							<li><a href="alerts.html">Alerts/Modal</a></li>
+							<li><a href="#">Buttons</a></li>
+							<li><a href="forms.html">Forms</a></li>
+							<!-- <li><a href="">Modal</a></li> -->
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</aside>
+		<div class="wrapper-content">			
+			<div class="bl-row">		
+				<div class="col-md-6 col-sm-12">
+					<div class="smart-widget">
+						<div class="smart-widget-header">
+							<span>Buttons</span>
+							<span style="float: right;">
+								<a class="color-toggle">
+									<i class="fa fa-cog"></i>
+								</a>
+								<a class="smart-widget-toggle">									
+									<i class="fa fa-chevron-up"></i>
+								</a>
+								<a href=""></a>
+								<i class="fa fa-close"></i>
+							</span>
+						</div>
+						<div class="smart-widget-color smart-color">
+							<ul>
+								<li class="header-color bg-black" data-color="bg-black"></li>
+								<li class="header-color bg-dark-blue" data-color="bg-dark-blue"></li>
+								<li class="header-color bg-blue" data-color="bg-blue"></li>
+								<li class="header-color bg-green" data-color="bg-green"></li>
+								<li class="header-color bg-red" data-color="bg-red"></li>
+								<li class="header-color bg-purple" data-color="bg-purple"></li>
+								<li class="header-color bg-orange" data-color="bg-orange"></li>
+								<li class="header-color bg-light-grey" data-color="bg-light-grey"></li>
+							</ul>
+						</div>
+						<div class="smart-widget-body text-center">
+							<div class="bl-row">								
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-primary">PRIMARY</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-secondary">Secondary</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-success">SUCCESS</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-danger">Danger</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-warning">Warning</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-info">Info</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-light">Light</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-dark">Dark</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="smart-widget bg-green">						
+						<div class="smart-widget-header">
+							<span>Outline Button</span>
+							<span style="float: right;">
+								<a class="color-toggle">
+									<i class="fa fa-cog"></i>
+								</a>
+								<a class="smart-widget-toggle">									
+									<i class="fa fa-chevron-up"></i>
+								</a>
+								<a href=""></a>
+								<i class="fa fa-close"></i>
+							</span>
+						</div>
+						<div class="smart-widget-color smart-color">
+							<ul>
+								<li class="header-color bg-black" data-color="bg-black"></li>
+								<li class="header-color bg-dark-blue" data-color="bg-dark-blue"></li>
+								<li class="header-color bg-blue" data-color="bg-blue"></li>
+								<li class="header-color bg-green" data-color="bg-green"></li>
+								<li class="header-color bg-red" data-color="bg-red"></li>
+								<li class="header-color bg-purple" data-color="bg-purple"></li>
+								<li class="header-color bg-orange" data-color="bg-orange"></li>
+								<li class="header-color bg-light-grey" data-color="bg-light-grey"></li>
+							</ul>
+						</div>
+						<div class="smart-widget-body text-center">
+							<div class="bl-row">								
+								<div class="col-sm-6 col-6 col-md-3 mb-4">
+									<button class="bl-btn bl-btn-outline-primary">primary</button>
+								</div>
+								<div class="col-sm-6 col-6 col-md-3 mb-4">
+									<button class="bl-btn bl-btn-outline-secondary">Secondary</button>
+								</div>
+								<div class="col-sm-6 col-6 col-md-3 mb-4">
+									<button class="bl-btn bl-btn-outline-success">Success</button>
+								</div>
+								<div class="col-sm-6 col-6 col-md-3 mb-4">
+									<button class="bl-btn bl-btn-outline-danger">Danger</button>
+								</div>
+								<div class="col-sm-6 col-6 col-md-3 mb-4">
+									<button class="bl-btn bl-btn-outline-warning">Warning</button>
+								</div>
+								<div class="col-sm-6 col-6 col-md-3 mb-4">
+									<button class="bl-btn bl-btn-outline-info">Info</button>
+								</div>
+								<div class="col-sm-6 col-6 col-md-3 mb-4">
+									<button class="bl-btn bl-btn-outline-light">Light</button>
+								</div>
+								<div class="col-sm-6 col-6 col-md-3 mb-4">
+									<button class="bl-btn bl-btn-outline-dark">Dark</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="smart-widget bg-blue">						
+						<div class="smart-widget-header">
+							<span>Dropdown Button</span>
+							<span style="float: right;">
+								<a class="color-toggle">
+									<i class="fa fa-cog"></i>
+								</a>
+								<a class="smart-widget-toggle">									
+									<i class="fa fa-chevron-up"></i>
+								</a>
+								<a href=""></a>
+								<i class="fa fa-close"></i>
+							</span>
+						</div>
+						<div class="smart-widget-color smart-color">
+							<ul>
+								<li class="header-color bg-black" data-color="bg-black"></li>
+								<li class="header-color bg-dark-blue" data-color="bg-dark-blue"></li>
+								<li class="header-color bg-blue" data-color="bg-blue"></li>
+								<li class="header-color bg-green" data-color="bg-green"></li>
+								<li class="header-color bg-red" data-color="bg-red"></li>
+								<li class="header-color bg-purple" data-color="bg-purple"></li>
+								<li class="header-color bg-orange" data-color="bg-orange"></li>
+								<li class="header-color bg-light-grey" data-color="bg-light-grey"></li>
+							</ul>
+						</div>
+						<div class="smart-widget-body text-center">
+							<div class="bl-row">
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-primary bl-btn-toggle">
+									Action
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-secondary bl-btn-toggle">
+									Action
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-success bl-btn-toggle">
+									Action
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-danger bl-btn-toggle">
+									Action
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-warning bl-btn-toggle">
+									Action
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-info bl-btn-toggle">
+									Action
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="smart-widget  bg-red">						
+						<div class="smart-widget-header">
+							<span>Dropdown Split Button</span>
+							<span style="float: right;">
+								<a class="color-toggle">
+									<i class="fa fa-cog"></i>
+								</a>
+								<a class="smart-widget-toggle">									
+									<i class="fa fa-chevron-up"></i>
+								</a>
+								<a href=""></a>
+								<i class="fa fa-close"></i>
+							</span>
+						</div>
+						<div class="smart-widget-color smart-color">
+							<ul>
+								<li class="header-color bg-black" data-color="bg-black"></li>
+								<li class="header-color bg-dark-blue" data-color="bg-dark-blue"></li>
+								<li class="header-color bg-blue" data-color="bg-blue"></li>
+								<li class="header-color bg-green" data-color="bg-green"></li>
+								<li class="header-color bg-red" data-color="bg-red"></li>
+								<li class="header-color bg-purple" data-color="bg-purple"></li>
+								<li class="header-color bg-orange" data-color="bg-orange"></li>
+								<li class="header-color bg-light-grey" data-color="bg-light-grey"></li>
+							</ul>
+						</div>
+						<div class="smart-widget-body text-center">
+							<div class="bl-row">								
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-primary bl-btn-sm">
+										Action
+									</button>
+									<button type="button" class="bl-btn bl-btn-primary bl-btn-sm bl-btn-toggle">
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-secondary">
+										Action
+									</button>
+									<button type="button" class="bl-btn bl-btn-secondary bl-btn-toggle">
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-success">
+										Action
+									</button>
+									<button type="button" class="bl-btn bl-btn-success bl-btn-toggle">
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-danger">
+										Action
+									</button>
+									<button type="button" class="bl-btn bl-btn-danger bl-btn-toggle">
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-warning">
+										Action
+									</button>
+									<button type="button" class="bl-btn bl-btn-warning bl-btn-toggle">
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+								<div class="bl-btn-group col-md-4 col-sm-6 col-6 mb-4">								
+									<button type="button" class="bl-btn bl-btn-info">
+										Action
+									</button>
+									<button type="button" class="bl-btn bl-btn-info bl-btn-toggle">
+									<i class="fa fa-caret-down"></i>
+										<ul class="bl-dropdown-menu">
+											<li>
+												<a href="#">
+													Action
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action3
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													Action4
+												</a>
+											</li>
+										</ul>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="smart-widget bg-orange">
+						<div class="smart-widget-header">
+							<span>Buttons Sizes</span>
+							<span style="float: right;">
+								<a class="color-toggle">
+									<i class="fa fa-cog"></i>
+								</a>
+								<a class="smart-widget-toggle">									
+									<i class="fa fa-chevron-up"></i>
+								</a>
+								<a href=""></a>
+								<i class="fa fa-close"></i>
+							</span>
+						</div>
+						<div class="smart-widget-color smart-color">
+							<ul>
+								<li class="header-color bg-black" data-color="bg-black"></li>
+								<li class="header-color bg-dark-blue" data-color="bg-dark-blue"></li>
+								<li class="header-color bg-blue" data-color="bg-blue"></li>
+								<li class="header-color bg-green" data-color="bg-green"></li>
+								<li class="header-color bg-red" data-color="bg-red"></li>
+								<li class="header-color bg-purple" data-color="bg-purple"></li>
+								<li class="header-color bg-orange" data-color="bg-orange"></li>
+								<li class="header-color bg-light-grey" data-color="bg-light-grey"></li>
+							</ul>
+						</div>
+						<div class="smart-widget-body text-center">
+							<p>			
+								<button class="bl-btn bl-btn-primary bl-btn-lg">primary</button>
+								<button class="bl-btn bl-btn-secondary bl-btn-lg">secondary</button>
+							</p>
+							<p>
+								<button class="bl-btn bl-btn-primary">primary</button>
+								<button class="bl-btn bl-btn-secondary">secondary</button>
+							</p>
+							<p>
+								<button class="bl-btn bl-btn-primary bl-btn-sm">primary</button>
+								<button class="bl-btn bl-btn-secondary bl-btn-sm">secondary</button>
+															
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="smart-widget bg-green">
+						<div class="smart-widget-header">
+							<span>Buttons Round</span>
+							<span style="float: right;">
+								<a class="color-toggle">
+									<i class="fa fa-cog"></i>
+								</a>
+								<a class="smart-widget-toggle">									
+									<i class="fa fa-chevron-up"></i>
+								</a>
+								<a href=""></a>
+								<i class="fa fa-close"></i>
+							</span>
+						</div>
+						<div class="smart-widget-color smart-color">
+							<ul>
+								<li class="header-color bg-black" data-color="bg-black"></li>
+								<li class="header-color bg-dark-blue" data-color="bg-dark-blue"></li>
+								<li class="header-color bg-blue" data-color="bg-blue"></li>
+								<li class="header-color bg-green" data-color="bg-green"></li>
+								<li class="header-color bg-red" data-color="bg-red"></li>
+								<li class="header-color bg-purple" data-color="bg-purple"></li>
+								<li class="header-color bg-orange" data-color="bg-orange"></li>
+								<li class="header-color bg-light-grey" data-color="bg-light-grey"></li>
+							</ul>
+						</div>
+						<div class="smart-widget-body text-center">
+							<div class="bl-row">								
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-round bl-btn-primary">PRIMARY</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-round bl-btn-secondary">Secondary</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-round bl-btn-success">SUCCESS</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-round bl-btn-danger">Danger</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-round bl-btn-warning">Warning</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-round bl-btn-info">Info</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-round bl-btn-light">Light</button>
+								</div>
+								<div class="col-md-3 col-sm-6 col-6 mb-4">
+									<button class="bl-btn bl-btn-round bl-btn-dark">Dark</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="smart-widget bg-purple">
+						<div class="smart-widget-header">
+							<span>Buttons Icon</span>
+							<span style="float: right;">
+								<a class="color-toggle">
+									<i class="fa fa-cog"></i>
+								</a>
+								<a class="smart-widget-toggle">									
+									<i class="fa fa-chevron-up"></i>
+								</a>
+								<a href=""></a>
+								<i class="fa fa-close"></i>
+							</span>
+						</div>
+						<div class="smart-widget-color smart-color">
+							<ul>
+								<li class="header-color bg-black" data-color="bg-black"></li>
+								<li class="header-color bg-dark-blue" data-color="bg-dark-blue"></li>
+								<li class="header-color bg-blue" data-color="bg-blue"></li>
+								<li class="header-color bg-green" data-color="bg-green"></li>
+								<li class="header-color bg-red" data-color="bg-red"></li>
+								<li class="header-color bg-purple" data-color="bg-purple"></li>
+								<li class="header-color bg-orange" data-color="bg-orange"></li>
+								<li class="header-color bg-light-grey" data-color="bg-light-grey"></li>
+							</ul>
+						</div>
+						<div class="smart-widget-body text-center">
+							<div class="bl-row">								
+								<div class="col-md-2 col-sm-4 col-3 mb-2">
+									<button class="bl-btn bl-btn-icon bl-btn-primary">
+										<a>
+											<i class="fa fa-facebook"></i>
+										</a>
+									</button>
+								</div>
+								<div class="col-md-2 col-sm-4 col-3 mb-2">
+									<button class="bl-btn bl-btn-icon bl-btn-secondary">
+										<a>
+											<i class="fa fa-github"></i>
+										</a>
+									</button>
+								</div>
+								<div class="col-md-2 col-sm-4 col-3 mb-2">
+									<button class="bl-btn bl-btn-icon bl-btn-success">
+										<a>
+											<i class="fa fa-flickr"></i>
+										</a>
+									</button>
+								</div>
+								<div class="col-md-2 col-sm-4 col-3 mb-2">
+									<button class="bl-btn bl-btn-icon bl-btn-danger">
+										<a>
+											<i class="fa fa-google"></i>
+										</a>
+									</button>
+								</div>
+								<div class="col-md-2 col-sm-4 col-3 mb-2">
+									<button class="bl-btn bl-btn-icon bl-btn-warning">
+										<a>
+											<i class="fa fa-twitter"></i>
+										</a>
+									</button>
+								</div>
+								<div class="col-md-2 col-sm-4 col-3 mb-2">
+									<button class="bl-btn bl-btn-icon bl-btn-info">
+										<a>
+											<i class="fa fa-instagram"></i>
+										</a>
+									</button>
+								</div>
+								<div class="col-md-2 col-sm-4 col-3 mb-2">
+									<button class="bl-btn bl-btn-icon bl-btn-light">
+										<a>
+											<i class="fa fa-tumblr"></i>
+										</a>
+									</button>
+								</div>
+								<div class="col-md-2 col-sm-4 col-3 mb-2">
+									<button class="bl-btn bl-btn-icon bl-btn-dark">
+										<a>
+											<i class="fa fa-vk"></i>
+										</a>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="smart-widget bg-purple">
+						<div class="smart-widget-header">
+							<span>Buttons Icon</span>
+							<span style="float: right;">
+								<a class="color-toggle">
+									<i class="fa fa-cog"></i>
+								</a>
+								<a class="smart-widget-toggle">									
+									<i class="fa fa-chevron-up"></i>
+								</a>
+								<a href=""></a>
+								<i class="fa fa-close"></i>
+							</span>
+						</div>
+						<div class="smart-widget-color smart-color">
+							<ul>
+								<li class="header-color bg-black" data-color="bg-black"></li>
+								<li class="header-color bg-dark-blue" data-color="bg-dark-blue"></li>
+								<li class="header-color bg-blue" data-color="bg-blue"></li>
+								<li class="header-color bg-green" data-color="bg-green"></li>
+								<li class="header-color bg-red" data-color="bg-red"></li>
+								<li class="header-color bg-purple" data-color="bg-purple"></li>
+								<li class="header-color bg-orange" data-color="bg-orange"></li>
+								<li class="header-color bg-light-grey" data-color="bg-light-grey"></li>
+							</ul>
+						</div>
+						<div class="smart-widget-body text-center">
+							<div class="bl-row">								
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-sm bl-btn-primary"><i class="fa fa-check-circle"></i>Accept</button>
+								</div>							
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-sm bl-btn-danger"><i class="fa fa-ban"></i>Decline</button>
+								</div>
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-sm bl-btn-warning"><i class="fa fa-arrow-left"></i>Back</button>
+								</div>
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-sm bl-btn-dark"><i class="fa fa-minus-circle"></i>Cancel</button>
+								</div>
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-primary"><i class="fa fa-check-circle"></i>Accept</button>
+								</div>							
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-danger"><i class="fa fa-ban"></i>Decline</button>
+								</div>
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-warning"><i class="fa fa-arrow-left"></i>Back</button>
+								</div>
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-dark"><i class="fa fa-minus-circle"></i>Cancel</button>
+								</div>
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-lg bl-btn-primary"><i class="fa fa-check-circle"></i>Accept</button>
+								</div>							
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-lg bl-btn-danger"><i class="fa fa-ban"></i>Decline</button>
+								</div>
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-lg bl-btn-warning"><i class="fa fa-arrow-left"></i>Back</button>
+								</div>
+								<div class="col-sm-6 col-md-6 mb-4">
+									<button class="bl-btn bl-btn-lg bl-btn-dark"><i class="fa fa-minus-circle"></i>Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
